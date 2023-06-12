@@ -1,13 +1,13 @@
-import avocado from "../../../assets/image/menu/avocadotoast.jpg";
+// import avocado from "../../../assets/image/menu/avocadotoast.jpg";
 import cappucino from "../../../assets/image/menu/cappucino.jpg";
 import latte from "../../../assets/image/menu/latte.jpg";
 import lemon from "../../../assets/image/menu/lemontea.jpg";
 import lunch from "../../../assets/image/menu/lunch.jpg";
 import matcha from "../../../assets/image/menu/matchalatte.jpg";
-import oreo from "../../../assets/image/menu/oreomilkshake.jpg";
+// import oreo from "../../../assets/image/menu/oreomilkshake.jpg";
 import sandwich from "../../../assets/image/menu/sandwich.jpg";
 import tea from "../../../assets/image/menu/tea.jpg";
-import thai from "../../../assets/image/menu/thai tea.jpg";
+// import thai from "../../../assets/image/menu/thai tea.jpg";
 import fries from "../../../assets/image/menu/fries.jpg";
 
 const menuImage = [

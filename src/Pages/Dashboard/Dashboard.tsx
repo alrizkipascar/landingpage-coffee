@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { Navigate, Outlet } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import { useEffect, useState } from "react";
+// import { Navigate, Outlet } from "react-router-dom";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 import DashboardCard from "./components/DashboardCard";
 import DashboardCarousel from "./components/DashboardCarousel";
 import CarouselData from "./components/carouselImage";

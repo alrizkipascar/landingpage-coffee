@@ -1,4 +1,4 @@
-function ReverseDashboard(props: cardProps) {
+function ReverseDashboard(props) {
   console.log("props", props);
   return (
     <div

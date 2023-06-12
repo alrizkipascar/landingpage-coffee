@@ -4,11 +4,10 @@ const DashboardCarousel = ({ data }: { data: any }) => {
   const [currentSlide, setcurrentSlide] = useState({
     index: 0,
     style: "translate-x-0",
-    hid: "opacity-0",
   });
 
   const nextSlide = () => {
-    let newSlide =
+    const newSlide =
       currentSlide.index === data.length - 1 ? 0 : currentSlide.index + 1;
     setcurrentSlide((prevstate) => ({
       ...prevstate,
@@ -27,7 +26,7 @@ const DashboardCarousel = ({ data }: { data: any }) => {
   };
 
   const prevSlide = () => {
-    let newSlide =
+    const newSlide =
       currentSlide.index === 0 ? data.length - 1 : currentSlide.index - 1;
 
     setcurrentSlide((prevstate) => ({
@@ -70,7 +69,6 @@ const DashboardCarousel = ({ data }: { data: any }) => {
                 src={slide?.image}
               />
               <h1
-                alt="This is a carousel slide"
                 key={index}
                 className=" duration-300 absolute inset-0 z-10 flex justify-center items-center text-5xl font-semibold text-center"
               >

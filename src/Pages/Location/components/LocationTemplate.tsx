@@ -1,4 +1,4 @@
-function LocationTemplate(props: cardProps) {
+function LocationTemplate(props) {
   return (
     <div className=" h-3/4 ">
       <div className="text-2xl text-center h-1/2">

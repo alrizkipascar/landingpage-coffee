@@ -45,7 +45,7 @@ const Menu = () => {
     if (data?.type == "All") {
       setMenu(menuImage);
     } else {
-      let newPacientes = menuImage?.filter(
+      const newPacientes = menuImage?.filter(
         (item) => item["category"] == data?.type
       );
       setMenu(newPacientes);
@@ -58,15 +58,15 @@ const Menu = () => {
   return (
     <div className="h-auto w-full">
       <Modals
-        dataBarang={showModal?.data}
-        showModal={showModal?.modal}
+        dataBarang={showModal["data"]}
+        showModal={showModal["modal"]}
         setShowModal={setShowModal}
       ></Modals>
       <div className="h-screen w-full my-14">
         <div className="rounded-xl flex overflow-hidden shadow-2xl w-3/4 h-full bg-dark-yellowish mx-auto">
           <div className="w-1/4 h-full border-r border-softGray">
             <div className="mx-2 my-6">
-              {category?.map((slide, index) => {
+              {category?.map((slide) => {
                 return (
                   <MenuButton
                     data={slide}
@@ -85,7 +85,7 @@ const Menu = () => {
             <div className="w-3/4 h-full flex   text-dark-brown">
               <div className="w-full mx-4 my-2 overflow-y-auto ">
                 <div className="grid grid-cols-3 grid-flow-row gap-4">
-                  {menu?.map((slide, index) => {
+                  {menu?.map((slide) => {
                     return (
                       <MenuCard
                         data={slide}

@@ -5,7 +5,7 @@ const MenuInfo = ({ dataBarang, showModal, setShowModal }) => {
     "translate-x-full transition-all ease-out duration-1000  "
   );
   console.log(showModal);
-  let ModalOut = "translate-x-2/4 transition-all ease-out duration-1000 ";
+  const ModalOut = "translate-x-2/4 transition-all ease-out duration-1000 ";
   if (showModal?.modal != false || null) {
     setTimeout(() => {
       setCssModal(ModalOut);
@@ -47,7 +47,7 @@ const MenuInfo = ({ dataBarang, showModal, setShowModal }) => {
                 </p>
                 <ul>
                   <p className="text-xl">Can be served: </p>
-                  {dataBarang?.served?.map((slide, index) => {
+                  {dataBarang?.served?.map((slide) => {
                     return <li>{slide}</li>;
                   })}
                 </ul>
