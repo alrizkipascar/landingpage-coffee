@@ -12,21 +12,21 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/landingpage-coffee",
         element: <Dashboard />,
         // element: <Navigate to="/barang" />,
       },
       {
-        path: "/about",
+        path: "/landingpage-coffee/about",
         element: <About />,
         // element: <Navigate to="/barang" />,
       },
       {
-        path: "/menu",
+        path: "/landingpage-coffee/menu",
         element: <Menu />,
       },
       {
-        path: "/location",
+        path: "/landingpage-coffee/location",
         element: <Location />,
       },
       //   {

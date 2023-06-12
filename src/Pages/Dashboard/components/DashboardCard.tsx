@@ -1,4 +1,4 @@
-function DashboardCard(props: cardProps) {
+function DashboardCard(props) {
   console.log("props", props);
   return (
     <div

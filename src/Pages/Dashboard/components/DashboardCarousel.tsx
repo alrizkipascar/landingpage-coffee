@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const DashboardCarousel = ({ data }) => {
+const DashboardCarousel = ({ data }: { data: any }) => {
   const [currentSlide, setcurrentSlide] = useState({
     index: 0,
     style: "translate-x-0",

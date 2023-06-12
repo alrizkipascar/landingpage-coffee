@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navigate, Outlet, useLocation, useNavigate } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import "./App.css";
 import Loading from "./Pages/Loading";
 
@@ -9,11 +7,8 @@ function App() {
   const location = useLocation();
 
   const navigate = useNavigate();
-  let url: string = null;
-  const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  console.log("path", location.pathname);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -24,17 +19,21 @@ function App() {
       <div className="w-full h-auto ">
         <header className="top-0 gap-5 relative px-3 items-center justify-center z-50 w-full h-24 flex bg-softGray">
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/landingpage-coffee")}
             className={`${
-              location.pathname == "/" ? "bg-dark-yellowish" : ""
+              location.pathname == "/landingpage-coffee"
+                ? "bg-dark-yellowish"
+                : ""
             } h-14 rounded-3xl  w-2/12 hover:bg-dark-yellowish text-dark-brown text-xl`}
           >
             <div className="  justify-items-center">Home</div>
           </button>
           <button
-            onClick={() => navigate("/menu")}
+            onClick={() => navigate("/landingpage-coffee/menu")}
             className={`${
-              location.pathname == "/menu" ? "bg-dark-yellowish" : ""
+              location.pathname == "/landingpage-coffee/menu"
+                ? "bg-dark-yellowish"
+                : ""
             } h-14 rounded-3xl  w-2/12 hover:bg-dark-yellowish text-dark-brown text-xl`}
           >
             {" "}
@@ -50,18 +49,22 @@ function App() {
             </div>
           </button>
           <button
-            onClick={() => navigate("/about")}
+            onClick={() => navigate("/landingpage-coffee/about")}
             className={`${
-              location.pathname == "/about" ? "bg-dark-yellowish" : ""
+              location.pathname == "/landingpage-coffee/about"
+                ? "bg-dark-yellowish"
+                : ""
             } h-14 rounded-3xl  w-2/12 hover:bg-dark-yellowish text-dark-brown text-xl`}
           >
             {" "}
             <div className="  justify-items-center">About</div>
           </button>
           <button
-            onClick={() => navigate("/location")}
+            onClick={() => navigate("/landingpage-coffee/location")}
             className={`${
-              location.pathname == "/location" ? "bg-dark-yellowish" : ""
+              location.pathname == "/landingpage-coffee/location"
+                ? "bg-dark-yellowish"
+                : ""
             } h-14 rounded-3xl  w-2/12 hover:bg-dark-yellowish text-dark-brown text-xl`}
           >
             {" "}
